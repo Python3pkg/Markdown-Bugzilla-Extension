@@ -11,7 +11,7 @@ class BugzillaExtension(Extension):
             "bugzillaURL"  : [ "%s", "Bugzilla URL to use, e.g. http://bugzilla.redhat.com/%s, default None" ],
         }
 
-        for key, value in kwargs.items():
+        for key, value in list(kwargs.items()):
             if (key == "bugzillaURL") and (value.count('%s') != 1):
                 raise BugzillaExtensionException("Invalid format string '" + value + "' ! ONE %s needed")
 

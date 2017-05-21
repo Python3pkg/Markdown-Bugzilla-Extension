@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 import unittest
-import rhbz
-import extension
+from . import rhbz
+from . import extension
 from markdown import Markdown
 
 

@@ -1,4 +1,4 @@
-from extension import BugzillaExtension, BugzillaPattern
+from .extension import BugzillaExtension, BugzillaPattern
 
 class RedHatBugzillaExtension(BugzillaExtension):
     def __init__(self, *args, **kwargs):
